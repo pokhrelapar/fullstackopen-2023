@@ -1,0 +1,15 @@
+sequenceDiagram
+    participant browser
+    participant server
+
+    browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+    server-->browser: Status Code 304 HTML code
+
+    browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    server-->browser: Status Code 304 main.css
+
+    browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+    server-->browser: Status Code 304 spa.js
+
+    browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    server-->browser: [{content: "helllooooo",date: "2023-03-01T03:00:32.689Z"},...]
