@@ -1,7 +1,7 @@
 import React from "react"
 import Part from "./Part";
 
-const Content = (props) => {
+const Content = ({parts}) => {
   
     return (
 
@@ -14,8 +14,8 @@ const Content = (props) => {
 
             {/* Using map to render Part component for each part*/}
 
-            {props.parts.map(part =>
-                <Part key={part.name} name={part.name} excercise={part.excercise}/>
+            {parts.map((part,idx) =>
+                <Part key={idx} part={part.name} excercises={part.excercises}/>
 
             )}
             

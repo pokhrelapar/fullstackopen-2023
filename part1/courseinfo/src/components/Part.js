@@ -1,9 +1,9 @@
 import React from "react"
 
-const Part = (props) => {
+const Part = ({part, excercises}) => {
   return (
     <React.Fragment>
-        <p> {props.part} {props.excercise}</p>
+        <p> {part} {excercises}</p>
     </React.Fragment>
   )
 }
