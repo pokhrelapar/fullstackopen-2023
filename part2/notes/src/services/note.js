@@ -3,6 +3,7 @@ const baseUrl = 'http://localhost:3001/notes'
 
 const getAll = () => {
   const request = axios.get(baseUrl)
+  console.log("Request",request)
   return request.then(response => response.data)
 }
 
