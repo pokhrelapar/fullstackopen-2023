@@ -9,8 +9,8 @@ const App = () => {
 	const [people, setPeople] = useState([
 		{name: 'Arto Hellas', number:'0123456789', id:1},
 		{ name: 'Ada Lovelace', number: '39-44-5323523', id: 2 },
-    { name: 'Dan Abramov', number: '12-43-234345', id: 3 },
-    { name: 'Mary Poppendieck', number: '39-23-6423122', id: 4 }
+		{ name: 'Dan Abramov', number: '12-43-234345', id: 3 },
+		{ name: 'Mary Poppendieck', number: '39-23-6423122', id: 4 }
 	
 	])
 	const [newName, setNewName] = useState('')
@@ -24,6 +24,8 @@ const App = () => {
 		//nummber: newNumber, id: people.length+1
 		if (people.some((person)=> person.name.toLowerCase() === newName.toLowerCase())) {
 			window.alert(`${newName} is already in the phonebook`)
+			setNewName('')
+			setNewNumber('')
 		}
 
 		else {
