@@ -22,9 +22,8 @@ const App = () => {
 		console.log('clicked', event.target)
 
 		//nummber: newNumber, id: people.length+1
-		if (people.some(person=> person.name === newName)) {
+		if (people.some((person)=> person.name.toLowerCase() === newName.toLowerCase())) {
 			window.alert(`${newName} is already in the phonebook`)
-
 		}
 
 		else {
