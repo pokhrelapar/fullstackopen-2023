@@ -1,6 +1,10 @@
 const Person = ({ person, handleRemove}) => {
   return (
-    <li className="contacts">{person.name}: {person.number} <button className="deleteContact" onClick={handleRemove}> Delete</button></li>
+	<div className="card">
+		<h2 className="person-name">{person.name} </h2>
+		<p className="person-number">{person.number}</p>
+		<button className="deleteContact" onClick={handleRemove}> Delete</button>
+	</div>
   )
 }
 
