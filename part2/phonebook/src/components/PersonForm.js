@@ -2,20 +2,22 @@ import React from 'react'
 
 const PersonForm = ( {newName, newNumber, handlePeopleChange, handleNumberChange, addEntry}) => {
   return (
+	
+	<div className='contactForm'>
+		<form onSubmit={addEntry}>
+			<div className='name'>
+				Name: <input className='inputName' value={newName} onChange={handlePeopleChange} required />
+			</div>
 
-    <form onSubmit={addEntry}>
-		<div style={{marginTop: 1+"em"}}>
-			Name: <input value={newName} onChange={handlePeopleChange} />
-		</div>
+			<div className='number'> 
+				Phone Number: <input className='inputNumber' value={newNumber} onChange={handleNumberChange} required/>
+			</div>
 
-		<div style={{marginTop: 1+"em"}}>
-			Phone Number: <input value={newNumber} onChange={handleNumberChange} />
-		</div>
-
-		<div>
-			<button type="submit" style={{marginTop: 2+"em"}}> Add</button>
-		</div>
-	</form>
+			<div>
+				<button className='submitButton' type="submit" > Add New Contact </button>
+			</div>
+		</form>
+	</div>
     
   )
 }
