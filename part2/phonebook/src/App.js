@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect} from 'react'
 import dataService from './services/dataService'
 import Filter from './components/Filter'
 import Person from './components/Person'
@@ -148,7 +148,7 @@ const App = () => {
 
 	return (
 		<div>
-			<h1>Phonebook</h1>
+			<h2>Phonebook</h2>
 			<Notification notification={notification}/>
 
 			<Filter searchString={searchString} handleSearchChange={handleSearchChange} />
@@ -160,9 +160,9 @@ const App = () => {
 
 
 			<h2> Your Contacts </h2>
-			<ul>
+			<div className='card-grid'>
 				{filteredPeople.map(person => <Person key={person.id} person={person} number={person} handleRemove={()=>deleteEntry(person.id)}/>)}
-			</ul>
+			</div>
 		</div>
 	)
 }
