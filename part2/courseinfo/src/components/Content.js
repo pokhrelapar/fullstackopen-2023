@@ -1,10 +1,12 @@
 import React from "react"
 import Part from "./Part";
 
+//Content gives you details
 const Content = ({parts}) => {
      
     return (
         
+
         <div>
             {/*
                 <Part part={props.parts[0].name} excercise = {props.parts[0].excercises} />
