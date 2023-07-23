@@ -1,0 +1,176 @@
+.contactForm {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    margin-bottom: 1em;
+}
+
+input[type=text] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+
+.contacts {
+    color: black;
+    padding-top: 5px;
+    font-size: 20px;
+    margin-bottom: 5px;
+
+}
+
+
+.contacts:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+
+.deleteContact {
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    border: 2px solid #f44336;
+}
+
+.deleteContact:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+
+
+.success,
+.error {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding: 15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+.success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image: url('https://i.imgur.com/Q9BGTuy.png');
+}
+
+
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('https://i.imgur.com/GnyDvKN.png');
+}
+
+
+.submitButton {
+    margin-top: 1em;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+
+.submitButton:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+
+.card {
+    flex-basis: calc(33.33% - 20px);
+    margin: 0px 20px 20px 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.person-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.person-number {
+    margin-bottom: 10px;
+}
+
+.deleteContact {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.deleteContact:hover {
+    background-color: #c9302c;
+}
+
+
+
+.details-btn {
+    margin-top: 1em;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+
+.details-btn:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+.hide-btn {
+    margin-top: 1em;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    border: 2px solid red;
+}
+
+.hide-btn:hover {
+    background-color: red;
+    color: white;
+}
+
+details-btn .filter {
+    margin-bottom: 2rem;
+}
+
+
+.flag {
+    width: 150px;
+    height: 150px;
+
+}
